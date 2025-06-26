@@ -15,10 +15,10 @@ export default function TodoList() {
         <S.Title>투두 리스트</S.Title>
         {data?.records?.map((record) => (
           <S.List key={record.id}>
-            제목: <a>{record.fields.name || "-"}</a> <br />
-            작성자: <a>{record.fields.writer || "-"}</a> <br />
-            내용: <a>{record.fields.content || "-"}</a> <br />
-            작성일: <a>{record.createdTime || "-"}</a> <br />
+            제목: <span>{record.fields.name || "-"}</span> <br />
+            작성자: <span>{record.fields.writer || "-"}</span> <br />
+            내용: <span>{record.fields.content || "-"}</span> <br />
+            작성일: <span>{record.createdTime || "-"}</span> <br />
           </S.List>
         ))}
       </div>
